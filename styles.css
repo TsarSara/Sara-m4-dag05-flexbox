@@ -21,6 +21,13 @@ header {
   color: #ffffff;
   padding: 16px 24px;
 }
+/* justify-content: space-between h1 till vänster, nav till höger
+ center allt trycks ihop i mitten, flex-end allt hamnar till höger, 
+ space-around h1 och nav är separerade men ligger mer mot mitten än vid space-between
+ har space-between när jag testar align-items: 
+ flex-end h1 ligger kvar till vänster nav hamnar längst ner till höger,
+ space-around går inte att välja, 
+ */
 
 header h1 {
   margin: 0 0 8px;
@@ -49,6 +56,8 @@ section {
 }
 
 article {
+  display:flex;
+  flex-direction: column;
   background-color: #ffffff;
   border: 1px solid #e3d5c3;
   border-radius: 8px;
@@ -74,6 +83,11 @@ article img,
 }
 
 footer {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
   background-color: #2b1c14;
   color: #ffffff;
   padding: 24px;
@@ -84,6 +98,7 @@ footer a {
 }
 
 address {
+  
   font-style: normal;
 }
 
@@ -118,6 +133,7 @@ h3 {
 }
 
 .pris {
+  margin-top: auto;
   font-weight: 700;
   color: #8c1010;
 }
