@@ -13,6 +13,10 @@ body {
 }
 
 header {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   background-color: #5b3a29;
   color: #ffffff;
   padding: 16px 24px;
@@ -23,6 +27,8 @@ header h1 {
 }
 
 nav ul {
+  display:flex;
+  gap: 20px;
   list-style: none;
   margin: 0;
   padding: 0;
